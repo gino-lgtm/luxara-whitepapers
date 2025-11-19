@@ -1,0 +1,68 @@
+{
+  "vid_version": "0.1.0",
+  "vid_id": "VID-LUX-2025-11-19-001",
+  "protocol": "Luxara",
+  "artefact": {
+    "type": "white_paper",
+    "title": "Truth Can’t Be Moderated — It Must Be Verified",
+    "author": "Gino Papa",
+    "filename": "Luxara_White_Paper_1_Truth_Cant_Be_Moderated_It_Must_Be_Verified.pdf",
+    "content_sha256": "1896e5234ec5a78ac5a7f986383c947feeb410c5a65fac919a3fae1b3fad1e73"
+  },
+  "verification_scope": {
+    "description": "Full-text verification of the authored PDF white paper titled 'Truth Can’t Be Moderated — It Must Be Verified'.",
+    "claims_assessed": [
+      "Authorship attribution to Gino Papa",
+      "Document integrity from local hash to anchored Merkle root",
+      "Conceptual alignment with Luxara protocol design and public signals"
+    ],
+    "boundaries": [
+      "No fact-checking of all external references or citations",
+      "No legal review of regulatory interpretations"
+    ]
+  },
+  "consensus": {
+    "mode": "human_plus_ai",
+    "human_attestors": [
+      {
+        "role": "founder",
+        "identifier": "Gino Papa (@aegpapa)",
+        "attestation": "Author and publisher of the white paper; content reviewed and approved for anchor."
+      }
+    ],
+    "ai_operators": [
+      {
+        "engine": "Luxara-aligned LLM",
+        "tasks": [
+          "semantic consistency checks",
+          "structural coherence review",
+          "hallucination and contradiction scan"
+        ]
+      }
+    ],
+    "divergence_handling": "No material divergence detected between human intent and AI analysis at the time of VID issuance."
+  },
+  "integrity": {
+    "fingerprint": {
+      "hash_algorithm": "SHA-256",
+      "content_sha256": "1896e5234ec5a78ac5a7f986383c947feeb410c5a65fac919a3fae1b3fad1e73",
+      "merkle_root": "1896e5234ec5a78ac5a7f986383c947feeb410c5a65fac919a3fae1b3fad1e73",
+      "file_count": 1
+    },
+    "provenance_notes": [
+      "Single-source artefact created and exported by the author.",
+      "No intermediate edits between hash computation and on-chain anchoring."
+    ],
+    "confidence": 0.99
+  },
+  "anchor": {
+    "chain": "bitcoin-signet",
+    "txid": "194dfe184b7e2a5d8dbbb84b797a20130e2def7a80043ef5aa55a64f5384b397",
+    "op_return_contains": "content merkle root (hex)",
+    "verification_method": "Direct lookup on public Signet explorer using TXID and recomputation of SHA-256 over the published PDF.",
+    "notes": "Anchor performed from Luxara Signet wallet 'luxara' using manual raw transaction with OP_RETURN."
+  },
+  "issued_at_iso8601": "2025-11-19T00:00:00Z",
+  "issued_by": "Luxara genesis operator (founder-controlled)",
+  "status": "active"
+}
